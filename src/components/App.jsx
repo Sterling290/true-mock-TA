@@ -21,7 +21,7 @@ class App extends React.Component {
   componentDidMount() {
     fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1a0d1fd156dd91954aa4ead254bd031f&language=en-US')
       .then((response) => response.json())
-      .then((something) => this.setState({ genres: something }, () => console.log(this.state)) )
+      .then((something) => this.setState({something }, () => console.log(this.state)) )
   }
 
   swapFavorites() {
